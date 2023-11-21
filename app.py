@@ -19,22 +19,22 @@ def showUsd():
 
 def showGbp():
     #Your code will go here, remove the pass once you are done editing your code
-    response = requests.get(url)  # sending request to url
-    jsonResponse = response.json()  # saving response as JSON
-    time = jsonResponse["time"]["updated"]  # getting time from response
-    code = jsonResponse["bpi"]["GBP"]["code"]  # getting currency code from response
-    rate = jsonResponse["bpi"]["BGP"]["rate"]  # getting price in USD from response.
+    response = requests.get(url)  # i am during the same as the USD just changing the 2nd one to the correct name
+    jsonResponse = response.json()
+    time = jsonResponse["time"]["updated"]
+    code = jsonResponse["bpi"]["GBP"]["code"]
+    rate = jsonResponse["bpi"]["BGP"]["rate"]
 
     print(time, code, rate)
     pass
 
 def showEuro():
     #Your code will go here, remove the pass once you are done editing your code
-    response = requests.get(url)  # sending request to url
-    jsonResponse = response.json()  # saving response as JSON
-    time = jsonResponse["time"]["updated"]  # getting time from response
-    code = jsonResponse["bpi"]["EUR"]["code"]  # getting currency code from response
-    rate = jsonResponse["bpi"]["EUR"]["rate"]  # getting price in USD from response.
+    response = requests.get(url) # i am during the same as the USD just changing the 2nd one to the correct name
+    jsonResponse = response.json()
+    time = jsonResponse["time"]["updated"]
+    code = jsonResponse["bpi"]["EUR"]["code"]
+    rate = jsonResponse["bpi"]["EUR"]["rate"]
 
     print(time, code, rate)
     pass
