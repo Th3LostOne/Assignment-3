@@ -1,9 +1,5 @@
 import requests
 
-# my repo
-# https://github.com/Th3LostOne/Assignment-3
-
-
 # This scripts is getting data from CoinDesk API
 
 url = "https://api.coindesk.com/v1/bpi/currentprice.json"
